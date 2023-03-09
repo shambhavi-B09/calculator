@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            background: rgb(84, 63, 85);
+
+        }
+
+        h1 {
+
+            margin-top: 0px;
+            color: rgb(179, 131, 226);
+            font-size: 7rem;
+            text-align: center;
+            opacity: 0.4;
+        }
+
+
+        form {
+
+            text-align: center;
+            justify-content: center;
+            border-color: black;
+            border: 5px solid black;
+            border-radius: 30px;
+            width: 350px ;
+            height: 550px;
+            margin: auto;
+            margin-top: 10px;
+            background-color: rgb(61, 20, 58);
+
+        }
+
+        input {
+            /*   background-color: rgb(0, 0, 8);*/
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+
+        B :hover{
+            background-color: yellow;
+
+        }
+
+        .A {
+            grid-column: span 4;
+            height: 69px;
+            width: 270px;
+            border-radius: 20px;
+            color: azure;
+            text-align: end;
+            margin: 40px 0px 30px 0px;
+            padding: 20px;
+            font-size: 40px;
+        }
+
+        .equi {
+            width: 120px;
+            border-radius: 40px;
+            background-color:rgba(78, 22, 5, 0.596) ;
+        }
+
+        .B {
+            background-color: rgb(50, 78, 69);
+        }
+
+        .C{
+            background-color: rgba(78, 22, 5, 0.596);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+    <form name="frm1">
+        <input type="text" name="answer" class="A">
+
+        <div style="background-color: rgb(61, 20, 58);">
+            <input type="button" onclick="frm1.answer.value='  '" value=" AC" class="C">
+            <input type="button" onclick="frm1.answer.value=' '" value="DEL" class="C">
+            <input type="button" onclick="frm1.answer.value+='%'" value="%" class="C">
+            <input type="button" onclick="frm1.answer.value+='/'" value="/" class="C">
+        </div>
+
+        <div style="background-color: rgb(61, 20, 58);">
+            <input type="button" onclick="frm1.answer.value+='1'" value="1" class="B">
+            <input type="button" onclick="frm1.answer.value+='2'" value="2" class="B">
+            <input type="button" onclick="frm1.answer.value+='3'" value="3" class="B">
+            <input type="button" onclick="frm1.answer.value+='+'" value="+" class="C">
+        </div>
+
+        <div style="background-color: rgb(61, 20, 58);">
+            <input type="button" onclick="frm1.answer.value+='4'" value="4" class="B">
+            <input type="button" onclick="frm1.answer.value+='5'" value="5" class="B">
+            <input type="button" onclick="frm1.answer.value+='6'" value="6" class="B">
+            <input type="button" onclick="frm1.answer.value+='-'" value="-" class="C">
+            <div>
+
+                <div style="background-color: rgb(61, 20, 58);">
+                    <input type="button" onclick="frm1.answer.value+='7'" value="7" class="B">
+                    <input type="button" onclick="frm1.answer.value+='8'" value="8" class="B">
+                    <input type="button" onclick="frm1.answer.value+='9'" value="9" class="B">
+                    <input type="button" onclick="frm1.answer.value+='*'" value="*" class="C">
+                    <div>
+
+                        <div style="background-color: rgb(61, 20, 58);">
+                            <input type="button" onclick="frm1.answer.value+='.'" value="." class="C">
+                            <input type="button" onclick="frm1.answer.value+='0'" value="0" class="B">
+                            <input type="button" onclick="frm1.answer.value=eval(frm1.answer.value)" value="="
+                                class="equi" >
+                            <div>
+
+                            </div>
+    </form>
+</body>
+
+</html>
